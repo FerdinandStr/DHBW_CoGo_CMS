@@ -1,1 +1,4 @@
-nohup npm --prefix /opt/DHBW_CoGo_CMS start >/opt/DHBW_CoGo_CMS/nohup.out &
+
+##### RUN SHIT ON LINUX WITHOUT SUICIDE #####
+nohup npm --prefix /opt/DHBW_CoGo_CMS run develop &
+disown

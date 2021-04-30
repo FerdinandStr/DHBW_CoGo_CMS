@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_cards",
+  "info": {
+    "name": "BusinessCards",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_de": {
+      "type": "string"
+    },
+    "content_de": {
+      "type": "richtext"
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "content_en": {
+      "type": "richtext"
+    }
+  }
+}

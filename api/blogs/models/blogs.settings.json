@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "Blogs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title_de": {
+      "type": "string"
+    },
+    "subtitle_de": {
+      "type": "string"
+    },
+    "content_de": {
+      "type": "richtext"
+    },
+    "title_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title_en": {
+      "type": "string"
+    },
+    "subtitle_en": {
+      "type": "string"
+    },
+    "content_en": {
+      "type": "richtext"
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "blog"
+    },
+    "banner_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

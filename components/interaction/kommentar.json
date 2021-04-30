@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_interaction_kommentars",
+  "info": {
+    "name": "Kommentar",
+    "icon": "comment-dots"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  }
+}
